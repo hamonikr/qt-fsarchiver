@@ -1,0 +1,12 @@
+Package: qt-fsarchiver
+Version: 0.8.5-11hamonikr-1
+Section: Backups
+Priority: extra
+Architecture: amd64
+Depends: libzip-dev, libbz2-dev, liblzma-dev, liblzo2-2, liblzo2-dev, libgcrypt11-dev, e2fslibs-dev, libblkid-dev, libattr1-dev, qtbase5-dev, qttools5-dev-tools, btrfs-tools, gdisk, sshfs, sshpass, nmap, samba, nfs-common, nfs-kernel-server, smbclient, xfsprogs, liblz4-dev, liblz4-dev, libzipstd-dev|libzstd1-dev, jfsutils
+Installed-Size: 850
+Maintainer: Dieter Baum <dieterbaum@users.sourceforge.net> 
+Homepage: http://sourceforge.net/projects/qt5-fsarchiver/
+Description: qt-fsarchiver
+        Program to back up and restore partitions,
+	directories and the MBR.
