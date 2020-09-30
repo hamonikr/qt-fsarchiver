@@ -1,0 +1,10 @@
+qt-fsarchiver (0.8.5.18~0ubuntu1hamonikr1) bionic; urgency=medium
+
+  * build for HamoniKR OS
+  * Changed Korean Translation  
+
+ -- Kevin Kim <root@hamonikr.org>  Wed, 30 Sep 2020 10:55:17 +0900
+
+
+
+

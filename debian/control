@@ -1,0 +1,39 @@
+Source: qt-fsarchiver
+Section: utils
+Priority: optional
+Standards-Version: 4.0.0
+Maintainer: Kevin Kim <chaeya@gmail.com>
+Build-Depends:  libzip-dev, 
+		libbz2-dev, 
+		liblzma-dev, 
+		liblzo2-2, 
+		liblzo2-dev,
+                libgcrypt20-dev, 
+		e2fslibs-dev, 
+		libblkid-dev, 
+		libattr1-dev, 
+		debhelper (>= 9), 
+		qtbase5-dev,
+		qttools5-dev-tools,
+                liblz4-dev,
+                libzstd-dev
+Homepage: https://github.com/hamonikr/qt-fsarchiver/
+
+Package: qt-fsarchiver
+Architecture: amd64
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+                samba,
+                sshfs,
+                gdisk,
+                sshpass,
+                nmap,
+                nfs-kernel-server,
+                smbclient,
+                xfsprogs,
+                nfs-common,
+                jfsutils
+Description: Program to back up and restore partitions,
+ directories and the MBR/GPT. Clone hard drives and build images of hard drives.
+ 
+

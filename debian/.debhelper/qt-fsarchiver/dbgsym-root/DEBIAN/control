@@ -1,0 +1,13 @@
+Package: qt-fsarchiver-dbgsym
+Package-Type: ddeb
+Source: qt-fsarchiver
+Version: 0.8.5.18~0ubuntu1hamonikr1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Kevin Kim <chaeya@gmail.com>
+Installed-Size: 127
+Depends: qt-fsarchiver (= 0.8.5.18~0ubuntu1hamonikr1)
+Section: debug
+Priority: optional
+Description: debug symbols for qt-fsarchiver
+Build-Ids: 57e8fbe2086f2209633d05421230bea27f205bce c0145b452b3cf4d24cd839e166dc6b3b88c70f40 c106bd24aeb7b680f42f04b1dfa5976689c6f1e5

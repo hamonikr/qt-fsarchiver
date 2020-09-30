@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=qt-fsarchiver
-Name[ko]=파티션 백업 및 복구
-Comment=GUI for fsarchiver
-Exec=qt-fsarchiver
-Icon=/usr/share/app-install/icons/harddrive2.png
-Terminal=false
-Type=Application
-StartupNotify=true
