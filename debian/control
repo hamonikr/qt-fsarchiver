@@ -21,9 +21,11 @@ Homepage: https://github.com/hamonikr/qt-fsarchiver/
 
 Package: qt-fsarchiver
 Architecture: amd64
+Conflicts: qt-fsarchiver (<< 0.8.5.18~0ubuntu1hamonikr1)
 Depends: ${shlibs:Depends},
          ${misc:Depends},
                 samba,
+                fsarchiver,                
                 sshfs,
                 gdisk,
                 sshpass,
@@ -32,7 +34,7 @@ Depends: ${shlibs:Depends},
                 smbclient,
                 xfsprogs,
                 nfs-common,
-                jfsutils
+                jfsutils                
 Description: Program to back up and restore partitions,
  directories and the MBR/GPT. Clone hard drives and build images of hard drives.
  

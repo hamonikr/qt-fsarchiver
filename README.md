@@ -16,3 +16,19 @@
 ```
 dpkg-buildpackage -b -rfakeroot -us -uc
 ```
+
+## build with sign
+```
+# 현재 저장된 빌드용 gpg secret 키 확인
+gpg -K
+
+git clone qt-fsarchiver
+
+export APPVER=`cat qt-fsarchiver/debian/changelog | head -n 1 | awk -F'(' '{print $2}' | awk -F')' '{print $1}'` \
+mv qt-fsarchiver qt-fsarchiver-$APPVER \
+cd qt-fsarchiver-$APPVER
+
+dh_make --createorig -i -epkg@hamonikr.org -c gpl3
+
+dpkg-buildpackage 
+```

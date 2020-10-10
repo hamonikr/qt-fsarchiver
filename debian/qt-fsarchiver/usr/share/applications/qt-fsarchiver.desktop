@@ -1,10 +1,11 @@
 [Desktop Entry]
-Name=qt-fsarchiver
-Name[de_DE]=qt-fsarchiver
+Name=fsarchiver
+Name[ko]=파티션 백업 복구
 Comment=Qt GUI for fsarchiver
+Comment[ko]=fsarchiver 백업 및 복구 도구
 Exec=/usr/sbin/qt-fsarchiver
 Icon=/usr/share/app-install/icons/harddrive2.png
 Terminal=false
 Type=Application
 StartupNotify=true
-
+Keywords=fsarchiver;백업;복구;파티션;backup;restore;partition;disk

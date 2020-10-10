@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'filedialog.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.5
+** Created by: Qt User Interface Compiler version 5.12.8
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,11 +10,8 @@
 #define UI_FILEDIALOG_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTextEdit>
@@ -32,19 +29,19 @@ public:
     void setupUi(QDialog *FileDialog)
     {
         if (FileDialog->objectName().isEmpty())
-            FileDialog->setObjectName(QStringLiteral("FileDialog"));
+            FileDialog->setObjectName(QString::fromUtf8("FileDialog"));
         FileDialog->resize(557, 441);
         cmd_cancel = new QPushButton(FileDialog);
-        cmd_cancel->setObjectName(QStringLiteral("cmd_cancel"));
+        cmd_cancel->setObjectName(QString::fromUtf8("cmd_cancel"));
         cmd_cancel->setGeometry(QRect(50, 390, 191, 27));
         label = new QLabel(FileDialog);
-        label->setObjectName(QStringLiteral("label"));
+        label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(20, 20, 251, 18));
         cmd_save = new QPushButton(FileDialog);
-        cmd_save->setObjectName(QStringLiteral("cmd_save"));
+        cmd_save->setObjectName(QString::fromUtf8("cmd_save"));
         cmd_save->setGeometry(QRect(300, 390, 231, 28));
         textEdit = new QTextEdit(FileDialog);
-        textEdit->setObjectName(QStringLiteral("textEdit"));
+        textEdit->setObjectName(QString::fromUtf8("textEdit"));
         textEdit->setGeometry(QRect(20, 40, 511, 321));
         textEdit->setLineWidth(1);
         textEdit->setAutoFormatting(QTextEdit::AutoNone);
@@ -59,10 +56,10 @@ public:
 
     void retranslateUi(QDialog *FileDialog)
     {
-        FileDialog->setWindowTitle(QApplication::translate("FileDialog", "Description of the backup", Q_NULLPTR));
-        cmd_cancel->setText(QApplication::translate("FileDialog", "Cancel", Q_NULLPTR));
-        label->setText(QApplication::translate("FileDialog", "Description of the backup:", Q_NULLPTR));
-        cmd_save->setText(QApplication::translate("FileDialog", "Save partition", Q_NULLPTR));
+        FileDialog->setWindowTitle(QApplication::translate("FileDialog", "Description of the backup", nullptr));
+        cmd_cancel->setText(QApplication::translate("FileDialog", "Cancel", nullptr));
+        label->setText(QApplication::translate("FileDialog", "Description of the backup:", nullptr));
+        cmd_save->setText(QApplication::translate("FileDialog", "Save partition", nullptr));
     } // retranslateUi
 
 };

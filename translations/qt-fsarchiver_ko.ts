@@ -16,7 +16,7 @@
         <location filename="../src/clone.cpp" line="457"/>
         <source>already saved</source>
         <comment>bereits gesichert</comment>
-        <translation>이미 저장됨</translation>
+        <translation>이미 백업됨</translation>
     </message>
     <message>
         <location filename="../src/clone.cpp" line="261"/>
@@ -179,13 +179,13 @@
         <location filename="../src/clone.cpp" line="554"/>
         <source>The disk to be recovered </source>
         <comment>Die wiederherzustellende Festplatte </comment>
-        <translation>이 디스크는 복구되었습니다.</translation>
+        <translation>이 디스크는 복원되었습니다.</translation>
     </message>
     <message>
         <location filename="../src/clone.cpp" line="555"/>
         <source> does not coincide with the saved </source>
         <comment> stimmt nicht mit der gesicherten </comment>
-        <translation>저장된 내용과 일치하지 않습니다.</translation>
+        <translation>백업된 내용과 일치하지 않습니다.</translation>
     </message>
     <message>
         <location filename="../src/clone.cpp" line="576"/>
@@ -209,7 +209,7 @@
         <location filename="../src/clone.cpp" line="633"/>
         <source>Save Harddrive Image</source>
         <comment>Festplatten Abbild erstellen</comment>
-        <translation>디스크 이미지 저장</translation>
+        <translation>디스크 이미지 백업</translation>
     </message>
     <message>
         <location filename="../src/clone.cpp" line="1033"/>
@@ -230,31 +230,31 @@
         <source>Saving the image of the partition was not successful.</source>
         <comment>Das Sichern des Abbildes der Partition war nicht erfolgreich.
 </comment>
-        <translation>파티션 이미지의 저장을 실패했습니다.</translation>
+        <translation>파티션 이미지의 백업을 실패했습니다.</translation>
     </message>
     <message>
         <location filename="../src/clone.cpp" line="1097"/>
         <source>The hard disk image recovery was successful.</source>
         <comment>Die Wiederherstellung des Abbildes der Festplatte war erfolgreich.</comment>
-        <translation>디스크 이미지의 복구를 성공하였습니다.</translation>
+        <translation>디스크 이미지의 복원을 성공하였습니다.</translation>
     </message>
     <message>
         <location filename="../src/clone.cpp" line="1099"/>
         <source>The recovery of the partition image was successful.</source>
         <comment>Die Wiederherstellung des Abbildes der Partition war erfolgreich.</comment>
-        <translation>파티션 이미지의 복구를 성공하였습니다.</translation>
+        <translation>파티션 이미지의 복원을 성공하였습니다.</translation>
     </message>
     <message>
         <location filename="../src/clone.cpp" line="1104"/>
         <source>Hard disk image recovery was not successful.</source>
         <comment>Die Wiederherstellung des Abbildes der Festplatte war nicht erfolgreich.</comment>
-        <translation>디스크 이미지의 복구를 실패하였습니다.</translation>
+        <translation>디스크 이미지의 복원을 실패하였습니다.</translation>
     </message>
     <message>
         <location filename="../src/clone.cpp" line="1110"/>
         <source>The recovery of the partition image was not successful.</source>
         <comment>Die Wiederherstellung des Abbildes der Partition war nicht erfolgreich.</comment>
-        <translation>파티션 이미지의 복구를 실패하였습니다.</translation>
+        <translation>파티션 이미지의 복원을 실패하였습니다.</translation>
     </message>
     <message>
         <location filename="../src/clone.cpp" line="621"/>
@@ -274,13 +274,13 @@
         <location filename="../src/clone.cpp" line="673"/>
         <source>Save Partition Image</source>
         <comment>Image einer Partition erstellen</comment>
-        <translation>파티션 이미지 저장</translation>
+        <translation>파티션 이미지 백업</translation>
     </message>
     <message>
         <location filename="../src/clone.cpp" line="675"/>
         <source>Save Partition Image</source>
         <comment>Partition Abbild erstellen</comment>
-        <translation>파티션 이미지 저장</translation>
+        <translation>파티션 이미지 백업</translation>
     </message>
     <message>
         <location filename="../src/clone.cpp" line="686"/>
@@ -342,7 +342,7 @@
         <location filename="../src/clone.cpp" line="1181"/>
         <source>Do you want really break clone, save or restore an image from the partition?</source>
         <comment>Wollen Sie wirklich das Klonen der Festplatte, die Erstellung oder die Wiederherstellung eines Images der Festplatte beenden?</comment>
-        <translation>정말 파티션 이미지의 저장 또는 복원을 중단 하시겠습니까?</translation>
+        <translation>정말 파티션 이미지의 백업 또는 복원을 중단 하시겠습니까?</translation>
     </message>
 </context>
 <context>
@@ -571,7 +571,7 @@ entschlüsseln. Schlüssel:</comment>
 The file extension must be .fsa.</source>
         <comment>Sie haben eine falsche Wiederherstellungsdatei ausgesucht
 Die Dateiendung muss .fsa sein</comment>
-        <translation>잘못된 복구파일을 선택했습니다.
+        <translation>잘못된 복원파일을 선택했습니다.
 파일의 확장자는 .fsa 파일만 가능합니다.</translation>
     </message>
     <message>
@@ -580,7 +580,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Bitte wählen Sie das Verzeichnis aus, in das das das gesicherte Verzeichnis zurück geschrieben werden soll.
 </comment>
-        <translation>이미지를 복구할 디렉토리를 선택하세요.
+        <translation>이미지를 복원할 디렉토리를 선택하세요.
 </translation>
     </message>
     <message>
@@ -684,7 +684,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment> Links wurden nicht korrekt gesichert. Die Sicherung der Verzeichnisse war nur teilweise erfolgreich
 </comment>
-        <translation> 링크가 올바르게 저장되지 않았습니다. 디렉토리 백업은 일부분만 성공했습니다.
+        <translation> 링크가 올바르게 백업되지 않았습니다. 디렉토리 백업은 일부분만 성공했습니다.
 </translation>
     </message>
     <message>
@@ -734,7 +734,7 @@ Die Dateiendung muss .fsa sein</comment>
         <source> links were not restored correctly. Directory recovery was only partially successful.</source>
         <comment> Links wurden nicht korrekt wiederhergestellt. Die Wiederherstellung der Verzeichnisse war nur teilweise erfolgreich
 </comment>
-        <translation> 링크가 올바르게 저장되지 않았습니다. 디렉토리 백업은 일부분만 성공했습니다.</translation>
+        <translation> 링크가 올바르게 백업되지 않았습니다. 디렉토리 백업은 일부분만 성공했습니다.</translation>
     </message>
     <message>
         <location filename="../src/dir.cpp" line="628"/>
@@ -787,7 +787,7 @@ Die Dateiendung muss .fsa sein</comment>
         <location filename="../src/mbr.cpp" line="60"/>
         <source>MBR/GPT save</source>
         <comment>MBR/GPT sichern</comment>
-        <translation>MBR 또는 GPT 저장</translation>
+        <translation>MBR 또는 GPT 백업</translation>
     </message>
     <message>
         <location filename="../src/mbr.cpp" line="65"/>
@@ -1000,7 +1000,7 @@ Die Dateiendung muss .fsa sein</comment>
         <source>The end of hidden area of the 1st Partition could not be read. Only 512 bytes are saved.</source>
         <comment>Das Ende des verborgenen Bereiches der 1. Partition konnte nicht ausgelesen werden. Es werden nur 512 Bytes gesichert.
 </comment>
-        <translation>1 분할의 숨겨진 영역의 끝을 읽을 수 없습니다. 512 바이트만 저장 됩니다.</translation>
+        <translation>1 분할의 숨겨진 영역의 끝을 읽을 수 없습니다. 512 바이트만 백업 됩니다.</translation>
     </message>
     <message>
         <location filename="../src/mbr.cpp" line="470"/>
@@ -1212,7 +1212,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Bitte wählen Sie die zu sichernde Partition aus.
 </comment>
-        <translation>저장 될 파티션을 선택하세요.
+        <translation>백업할 파티션을 선택하세요.
 </translation>
     </message>
     <message>
@@ -1286,7 +1286,7 @@ Die Dateiendung muss .fsa sein</comment>
         <location filename="../src/net.cpp" line="603"/>
         <source>The system partition to be saved is mounted. Do you want to do a live backup?</source>
         <comment>Die zu sichernde Systempartition ist eingehängt. Wollen Sie eine Live-Sicherung durchführen?</comment>
-        <translation>저장할 시스템 파티션이 마운트됩니다. 라이브 백업을 하시겠습니까?</translation>
+        <translation>백업할 시스템 파티션이 마운트됩니다. 라이브 백업을 하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../src/net.cpp" line="328"/>
@@ -1394,7 +1394,7 @@ Die Dateiendung muss .fsa sein</comment>
 The file extension must be .fsa.</source>
         <comment>Sie haben eine falsche Wiederherstellungsdatei ausgesucht ausgesucht 
 Die Dateiendung muss .fsa sein</comment>
-        <translation>선택한 잘못 된 복구 파일을 선택 했습니다.
+        <translation>선택한 잘못 된 복원 파일을 선택 했습니다.
  파일을 종료 해야 합니다. fsa 될</translation>
     </message>
     <message>
@@ -1416,7 +1416,7 @@ Die Dateiendung muss .fsa sein</comment>
         <location filename="../src/net.cpp" line="884"/>
         <source> does not match the backed up partition.</source>
         <comment> stimmt nicht mit der gesicherten </comment>
-        <translation> 저장 된 일치 하지 않습니다.  </translation>
+        <translation> 백업된 내용과 일치 하지 않습니다.  </translation>
     </message>
     <message>
         <location filename="../src/net.cpp" line="908"/>
@@ -1690,7 +1690,7 @@ entschlüsseln. Schlüssel</comment>
 </source>
         <comment>Sie haben versucht eine Partition wiederherzustellen. Die gewählte Datei kann nur Verzeichnisse wiederherstellen. Bitte starten Sie das Programm neu.
 </comment>
-        <translation>파티션을 복구 하려고 했습니다. 선택한 파일 디렉터리 복원할 수 있습니다. 프로그램을 다시 시작 하십시오.
+        <translation>파티션을 복원 하려고 했습니다. 선택한 파일 디렉터리 복원할 수 있습니다. 프로그램을 다시 시작 하십시오.
 </translation>
     </message>
     <message>
@@ -1728,7 +1728,7 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/net.cpp" line="1655"/>
         <source>Do you really want to stop backing up or restoring the partition?</source>
         <comment>Wollen Sie wirklich die Sicherung oder Wiederherstellung der Partition beenden?</comment>
-        <translation>당신은 진짜로 저장 또는 파티션의 복원 할까요?</translation>
+        <translation>정말 백업 또는 파티션 복원을 중지하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../src/net.cpp" line="1767"/>
@@ -1806,43 +1806,43 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/setting.cpp" line="36"/>
         <source>Arabic</source>
         <comment>Arabisch</comment>
-        <translation>아라비아 말</translation>
+        <translation>아라비아어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="36"/>
         <source>Catalan</source>
         <comment>Katalanisch</comment>
-        <translation>카탈로니아의</translation>
+        <translation>카탈로니아</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="36"/>
         <source>Danish</source>
         <comment>Dänisch</comment>
-        <translation>덴마크의</translation>
+        <translation>덴마크</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="36"/>
         <source>French</source>
         <comment>Französisch</comment>
-        <translation>프랑스의</translation>
+        <translation>프랑스</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="36"/>
         <source>Czech</source>
         <comment>Tschechisch</comment>
-        <translation>체코의</translation>
+        <translation>체코어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="37"/>
         <source>Greek</source>
         <comment>Griechisch</comment>
-        <translation>그리스의</translation>
+        <translation>그리스어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="37"/>
         <source>Finnish</source>
         <comment>Finnisch</comment>
-        <translation>핀란드의</translation>
+        <translation>핀란드</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="37"/>
@@ -1854,19 +1854,19 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/setting.cpp" line="37"/>
         <source>Hungarian</source>
         <comment>Ungarisch</comment>
-        <translation>헝가리의</translation>
+        <translation>헝가리어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="37"/>
         <source>Armenian</source>
         <comment>Armenisch</comment>
-        <translation>아르메니아의</translation>
+        <translation>아르메니아</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="37"/>
         <source>Estonian</source>
         <comment>Estnisch</comment>
-        <translation>에스토니아의</translation>
+        <translation>에스토니아</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="37"/>
@@ -1878,19 +1878,19 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/setting.cpp" line="37"/>
         <source>Indonesian</source>
         <comment>Indonesisch</comment>
-        <translation>인도네시아의</translation>
+        <translation>인도네시아어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="38"/>
         <source>Korean</source>
         <comment>Koreanisch</comment>
-        <translation>한국의</translation>
+        <translation>한국어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="38"/>
         <source>Norwegian</source>
         <comment>Norwegisch</comment>
-        <translation>노르웨이의</translation>
+        <translation>노르웨이어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="38"/>
@@ -1908,13 +1908,13 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/setting.cpp" line="38"/>
         <source>Latvian</source>
         <comment>Lettisch</comment>
-        <translation>라트비아의</translation>
+        <translation>라트비아어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="38"/>
         <source>Lithuanian</source>
         <comment>Litauisch</comment>
-        <translation>리투아니아의</translation>
+        <translation>리투아니아어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="38"/>
@@ -1926,19 +1926,19 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/setting.cpp" line="38"/>
         <source>Persian</source>
         <comment>Persisch</comment>
-        <translation>페르시아의</translation>
+        <translation>페르시아어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="39"/>
         <source>Slovak</source>
         <comment>Slowakisch</comment>
-        <translation>슬로바키아의</translation>
+        <translation>슬로바키아어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="39"/>
         <source>Serbian</source>
         <comment>Serbisch</comment>
-        <translation>세르비아의</translation>
+        <translation>세르비아어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="39"/>
@@ -1950,13 +1950,13 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/setting.cpp" line="39"/>
         <source>Turkish</source>
         <comment>Türkisch</comment>
-        <translation>터키의</translation>
+        <translation>터키어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="39"/>
         <source>Ukrainian</source>
         <comment>Ukrainisch</comment>
-        <translation>우크라이나의</translation>
+        <translation>우크라이나어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="39"/>
@@ -1974,7 +1974,7 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/setting.cpp" line="39"/>
         <source>Vietnamese</source>
         <comment>Vietnamesich</comment>
-        <translation>베트남의</translation>
+        <translation>베트남어</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="49"/>
@@ -1998,7 +1998,7 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/setting.cpp" line="49"/>
         <source>gzip best</source>
         <comment>gzip best</comment>
-        <translation>gzip 베스트</translation>
+        <translation>gzip 최상</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="49"/>
@@ -2010,7 +2010,7 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/setting.cpp" line="49"/>
         <source>lz4</source>
         <comment>lz4</comment>
-        <translation></translation>
+        <translation>lz4</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="52"/>
@@ -2028,13 +2028,13 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/setting.cpp" line="52"/>
         <source>lzma medium</source>
         <comment>lzma medium</comment>
-        <translation>lzma 매체</translation>
+        <translation>lzma 중간</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="52"/>
         <source>lzma best</source>
         <comment>lzma best</comment>
-        <translation>lzma 최고의</translation>
+        <translation>lzma 최고</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="52"/>
@@ -2045,7 +2045,7 @@ entschlüsseln. Schlüssel</comment>
     <message>
         <location filename="../src/setting.cpp" line="55"/>
         <source>Samba</source>
-        <translation>삼 바</translation>
+        <translation>삼바</translation>
     </message>
     <message>
         <location filename="../src/setting.cpp" line="55"/>
@@ -2068,7 +2068,7 @@ entschlüsseln. Schlüssel</comment>
         <source>The settings have been saved. If the language setting is changed, the program must be restarted.</source>
         <comment>Die Einstellungen wurden gespeichert. Bei geänderter Spracheinstellung muss das Programm neu gestartet werden.
 </comment>
-        <translation>설정이 저장 되었습니다. 수 다시 시작 프로그램 언어 설정을 수정 합니다.</translation>
+        <translation>설정이 저장 되었습니다. 언어를 변경하면 프로그램을 재시작 해야 합니다.</translation>
     </message>
 </context>
 <context>
@@ -2105,7 +2105,7 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/ui/net.ui" line="74"/>
         <source>Existing partitions/directories:</source>
         <extracomment>vorhandene Partitionen:</extracomment>
-        <translation>저장된 파일 또는 디렉터리:</translation>
+        <translation>백업된 파일 또는 디렉터리:</translation>
     </message>
     <message>
         <location filename="../src/ui/net.ui" line="93"/>
@@ -2117,7 +2117,7 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/ui/net.ui" line="111"/>
         <source>Save par&amp;tition
 with fs-archiver</source>
-        <translation>파티션 저장</translation>
+        <translation>파티션 백업</translation>
     </message>
     <message>
         <location filename="../src/ui/net.ui" line="163"/>
@@ -2133,7 +2133,7 @@ with fs-archiver</source>
         <location filename="../src/ui/net.ui" line="720"/>
         <source>Save partition</source>
         <extracomment>Partition sichern</extracomment>
-        <translation>파티션 저장</translation>
+        <translation>파티션 백업</translation>
     </message>
     <message>
         <location filename="../src/ui/net.ui" line="691"/>
@@ -2173,13 +2173,13 @@ with fs-archiver</source>
         <location filename="../src/ui/net.ui" line="257"/>
         <source>On the number saved
 Files/directories:</source>
-        <translation>저장된 파일/디렉터리 수:</translation>
+        <translation>백업된 파일/디렉터리 수:</translation>
     </message>
     <message>
         <location filename="../src/ui/net.ui" line="272"/>
         <source>already saved 
 files/directories:</source>
-        <translation>이미 저장 된 파일/디렉터리:</translation>
+        <translation>이미 백업된 파일/디렉터리:</translation>
     </message>
     <message>
         <location filename="../src/ui/net.ui" line="294"/>
@@ -2201,7 +2201,7 @@ files/directories:</source>
     <message>
         <location filename="../src/ui/net.ui" line="369"/>
         <source>Directory in which the partition is backed up or from which the recovery file is selected.</source>
-        <translation>디렉터리는 파티션을 백업 또는 복구 파일에서 제거 됩니다.</translation>
+        <translation>디렉터리는 파티션을 백업 또는 복원 파일에서 제거 됩니다.</translation>
     </message>
     <message>
         <location filename="../src/ui/net.ui" line="372"/>
@@ -2266,7 +2266,7 @@ backup key</source>
         <location filename="../src/ui/net.ui" line="529"/>
         <source>Save PBR</source>
         <extracomment>PBR sichern</extracomment>
-        <translation>PBR 저장</translation>
+        <translation>PBR 백업</translation>
     </message>
     <message>
         <location filename="../src/ui/net.ui" line="542"/>
@@ -2314,7 +2314,7 @@ transmission:</source>
         <location filename="../src/ui/net_ein.ui" line="55"/>
         <source>Save data</source>
         <extracomment>Daten speichern</extracomment>
-        <translation>데이터 저장</translation>
+        <translation>데이터 백업</translation>
     </message>
     <message>
         <location filename="../src/ui/net_ein.ui" line="94"/>
@@ -2375,7 +2375,7 @@ transmission:</source>
         <location filename="../src/ui/filedialog.ui" line="52"/>
         <source>Save partition</source>
         <extracomment>Partition sichern</extracomment>
-        <translation>파티션 저장</translation>
+        <translation>파티션 백업</translation>
     </message>
     <message>
         <location filename="../src/filedialog.cpp" line="40"/>
@@ -2387,7 +2387,7 @@ transmission:</source>
         <location filename="../src/filedialog.cpp" line="49"/>
         <source>Save partition</source>
         <comment>Partition sichern</comment>
-        <translation>파티션 저장</translation>
+        <translation>파티션 백업</translation>
     </message>
     <message>
         <location filename="../src/filedialog.cpp" line="71"/>
@@ -2950,7 +2950,7 @@ verschlüsseln. Schlüssel</comment>
 </source>
         <comment>Die Sicherung der Partition war nicht erfolgreich. Die Datei ist zu groß. Nutzen Sie eine FAT-Partition?
 </comment>
-        <translation>파티션을 저장 하는 중 오류가 발생 했습니다. 파일이 너무 큽니다. 사용은 FAT 파티션?
+        <translation>파티션을 백업 하는 도중 오류가 발생 했습니다. 파일이 너무 큽니다. FAT 파티션을 사용중인가요?
 </translation>
     </message>
     <message>
@@ -2982,8 +2982,8 @@ verschlüsseln. Schlüssel</comment>
         <source>Backup and restore partitions, directory and MBR.
 version 0.8.5-18, May 10, 2020</source>
         <comment>Sichern und Wiederherstellen von Partitionen, Verzeichnissen und MBR Version 0.8.5-15, 6.Februar 2020</comment>
-        <translation>백업 및 복원, 디렉터리 파티션과 MBR
-버전 0.8.5-18, 2020년 마이월 10일</translation>
+        <translation>파티션 백업 및 복원 프로그램.
+HamoniKR fsarchiver 1.0.0, 10 Oct 2020</translation>
     </message>
     <message>
         <location filename="../src/mainWindow.cpp" line="1538"/>
@@ -3074,7 +3074,7 @@ version 0.8.5-18, May 10, 2020</source>
 .</source>
         <comment> spezielle Daten und der Partition Boot Sektor wurden wieder hergestellt
 .</comment>
-        <translation> 특가 상품 및 파티션 부트 레코드 복원 되었습니다.</translation>
+        <translation> 특가 상품 및 파티션 부트 레코드가 복원 되었습니다.</translation>
     </message>
     <message>
         <location filename="../src/mainWindow.cpp" line="1727"/>
@@ -3082,7 +3082,7 @@ version 0.8.5-18, May 10, 2020</source>
 </source>
         <comment>Sie haben versucht eine Partition wiederherzustellen. Die gewählte Datei kann nur Verzeichnisse wiederherstellen. Bitte starten Sie das Programm neu.
 </comment>
-        <translation>파티션을 복원 시도 했습니다. 선택한 파일 디렉터리 복원할 수 있습니다. 프로그램을 다시 시작 하십시오.
+        <translation>파티션을 복원 시도 했습니다. 선택한 파일 디렉터리를 복원할 수 있습니다. 프로그램을 다시 시작 하십시오.
 </translation>
     </message>
     <message>
@@ -3198,7 +3198,7 @@ version 0.8.5-18, May 10, 2020</source>
         <location filename="../src/mainWindow.cpp" line="2044"/>
         <source>Do you really want to stop backing up or restoring the partition?</source>
         <comment>Wollen Sie wirklich die Sicherung oder Wiederherstellung der Partition beenden?</comment>
-        <translation>파티션의 백업 또는 복구를 중단 하시겠습니까?</translation>
+        <translation>파티션의 백업 또는 복원을 중단 하시겠습니까?</translation>
     </message>
 </context>
 <context>
@@ -3206,7 +3206,7 @@ version 0.8.5-18, May 10, 2020</source>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="14"/>
         <source>Save/restore partition </source>
-        <translation>파티션 저장/복원</translation>
+        <translation>파티션 백업/복원</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="33"/>
@@ -3226,7 +3226,7 @@ version 0.8.5-18, May 10, 2020</source>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="68"/>
         <source>Save partition</source>
-        <translation>파티션 저장</translation>
+        <translation>파티션 백업</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="391"/>
@@ -3267,20 +3267,20 @@ version 0.8.5-18, May 10, 2020</source>
         <location filename="../src/ui/fsarchiverMain.ui" line="227"/>
         <source>On the number saved
 Files/directories:</source>
-        <translation>저장된 파일 또는 디렉터리 수 :</translation>
+        <translation>백업된 파일 또는 디렉터리 수 :</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="235"/>
         <source>already saved 
 files/directories:</source>
-        <translation>저장된 파일 또는 디렉터리:</translation>
+        <translation>백업된 파일 또는 디렉터리:</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="537"/>
         <source>&amp;Partition save 
 with fsarchiver</source>
         <extracomment>Partition mit * fsArchiver sichern:</extracomment>
-        <translation>파티션 저장(&amp;P)</translation>
+        <translation>파티션 백업(&amp;P)</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="582"/>
@@ -3300,7 +3300,7 @@ with fsarchiver</source>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="809"/>
         <source>&amp;Save a partition on network</source>
-        <translation>네트워크에서 파티션 저장(&amp;S)</translation>
+        <translation>네트워크에서 파티션 백업(&amp;S)</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="818"/>
@@ -3326,7 +3326,7 @@ with fsarchiver</source>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="46"/>
         <source>Directory where the backup file is written or directory where the recovery file is stored.</source>
-        <translation>백업 파일 또는 복구 파일이 저장된 디렉토리입니다.</translation>
+        <translation>백업 파일 또는 복원 파일이 저장된 디렉토리입니다.</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="126"/>
@@ -3386,7 +3386,7 @@ backup key</source>
         <location filename="../src/ui/fsarchiverMain.ui" line="466"/>
         <source>Save PBR</source>
         <extracomment>PBR sichern</extracomment>
-        <translation>PBR 저장</translation>
+        <translation>PBR 백업</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="489"/>
@@ -3414,7 +3414,7 @@ with fsarchi&amp;ver</source>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="678"/>
         <source>&amp;Actions</source>
-        <translation>백업 및 복구 모드(&amp;A)</translation>
+        <translation>백업 및 복원 모드(&amp;A)</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="702"/>
@@ -3444,7 +3444,7 @@ with fsarchi&amp;ver</source>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="764"/>
         <source>Save &amp;MBR/GPT</source>
-        <translation>MBR/GPT 저장(&amp;M)</translation>
+        <translation>MBR/GPT 백업(&amp;M)</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="773"/>
@@ -3459,7 +3459,7 @@ with fsarchi&amp;ver</source>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="791"/>
         <source>Save &amp;directory </source>
-        <translation>디렉토리 저장(&amp;d)</translation>
+        <translation>디렉토리 백업(&amp;d)</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="800"/>
@@ -3469,7 +3469,7 @@ with fsarchi&amp;ver</source>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="855"/>
         <source>Save directories on network</source>
-        <translation>네트워크에서 디렉토리 저장</translation>
+        <translation>네트워크에서 디렉토리 백업</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="860"/>
@@ -3645,7 +3645,7 @@ with fsarchi&amp;ver</source>
     <message>
         <location filename="../src/ui/clone_dialog.ui" line="286"/>
         <source>already saved:</source>
-        <translation>저장된 크기</translation>
+        <translation>백업된 크기</translation>
     </message>
     <message>
         <location filename="../src/ui/clone_dialog.ui" line="302"/>
@@ -3666,7 +3666,7 @@ with fsarchi&amp;ver</source>
     <message>
         <location filename="../src/ui/clone_dialog.ui" line="393"/>
         <source>MB/sec</source>
-        <translation>M B/초</translation>
+        <translation>MB/초</translation>
     </message>
     <message>
         <location filename="../src/ui/clone_dialog.ui" line="423"/>
@@ -3715,7 +3715,7 @@ with fsarchi&amp;ver</source>
     <message>
         <location filename="../src/ui/clone_dialog.ui" line="587"/>
         <source>Save/Restore</source>
-        <translation>저장/복원</translation>
+        <translation>백업/복원</translation>
     </message>
 </context>
 <context>
@@ -3725,7 +3725,7 @@ with fsarchi&amp;ver</source>
         <location filename="../src/ui/dir_dialog.ui" line="42"/>
         <source>Save/restore directory</source>
         <extracomment>Verzeichnis sichern/zurückschreiben</extracomment>
-        <translation>디렉토리 저장/복원</translation>
+        <translation>디렉토리 백업/복원</translation>
     </message>
     <message>
         <location filename="../src/ui/dir_dialog.ui" line="26"/>
@@ -3737,7 +3737,7 @@ with fsarchi&amp;ver</source>
         <location filename="../src/ui/dir_dialog.ui" line="71"/>
         <source>Saved directory</source>
         <extracomment>zu sicherndes Verzeichnis:</extracomment>
-        <translation>저장된 디렉토리</translation>
+        <translation>백업된 디렉토리</translation>
     </message>
     <message>
         <location filename="../src/ui/dir_dialog.ui" line="39"/>
@@ -3859,7 +3859,7 @@ backup key</source>
         <location filename="../src/ui/mbr_dialog.ui" line="14"/>
         <source>Save / Restore MBR/GPT</source>
         <extracomment>MBR sichern/zurückschreiben</extracomment>
-        <translation>MBR 또는 GPT 저장/복원</translation>
+        <translation>MBR 또는 GPT 백업/복원</translation>
     </message>
     <message>
         <location filename="../src/ui/mbr_dialog.ui" line="27"/>
@@ -3895,7 +3895,7 @@ backup key</source>
         <location filename="../src/ui/mbr_dialog.ui" line="74"/>
         <source>Save / restore MBR</source>
         <extracomment>MBR sichern/zurückschreiben</extracomment>
-        <translation>MBR 저장/복원</translation>
+        <translation>MBR 백업/복원</translation>
     </message>
     <message>
         <location filename="../src/ui/mbr_dialog.ui" line="100"/>
@@ -3940,14 +3940,14 @@ from this hard disk:</source>
 cores, for fsarchiver
 should be used:</source>
         <extracomment>Anzahl Prozessorenkerne, * die für fsarchiver * verwendet werden sollen:</extracomment>
-        <translation></translation>
+        <translation>사용 할 CPU 코어 수:</translation>
     </message>
     <message>
         <location filename="../src/ui/setting.ui" line="66"/>
         <source>Standard
 compression:</source>
         <extracomment>Standard*kompression:</extracomment>
-        <translation></translation>
+        <translation>압축 표준:</translation>
     </message>
     <message>
         <location filename="../src/ui/setting.ui" line="90"/>
@@ -3971,7 +3971,7 @@ compression:</source>
         <source>Directories write back
 to the original location by default</source>
         <extracomment>Verzeichnisse * standardmäßig an * den ursprünglichen * Ort zurückschreiben</extracomment>
-        <translation></translation>
+        <translation>기본적으로 원본 디렉토리에 복원하기</translation>
     </message>
     <message>
         <location filename="../src/ui/setting.ui" line="153"/>
@@ -3988,19 +3988,19 @@ to the original location by default</source>
     <message>
         <location filename="../src/ui/setting.ui" line="179"/>
         <source>Show passwords</source>
-        <translation></translation>
+        <translation>암호 보이기</translation>
     </message>
     <message>
         <location filename="../src/ui/setting.ui" line="192"/>
         <source>Save network input data</source>
         <extracomment>Netzwerkeingabedaten * speichern</extracomment>
-        <translation>네트워크 입력된 데이터 저장</translation>
+        <translation>네트워크 입력 데이터 백업</translation>
     </message>
     <message>
         <location filename="../src/ui/setting.ui" line="205"/>
         <source>Save Settings</source>
         <extracomment>Einstellungen speichern</extracomment>
-        <translation>설정 저장</translation>
+        <translation>설정 백업</translation>
     </message>
     <message>
         <location filename="../src/ui/setting.ui" line="218"/>
@@ -4066,7 +4066,7 @@ You can set the factor between 1 and 20.</source>
         <location filename="../src/ui/setting.ui" line="361"/>
         <source>Selection of the evaluation time 
 from the terminal program. </source>
-        <translation></translation>
+        <translation>프로그램 평가 시간 선택 </translation>
     </message>
 </context>
 <context>
@@ -4075,7 +4075,7 @@ from the terminal program. </source>
         <location filename="../src/ui/treeview.ui" line="14"/>
         <source>Select restore file</source>
         <extracomment>Wiederherstellungsdatei auswählen</extracomment>
-        <translation>복구할 파일을 선택</translation>
+        <translation>복원할 파일을 선택</translation>
     </message>
     <message>
         <location filename="../src/ui/treeview.ui" line="41"/>
