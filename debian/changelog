@@ -1,3 +1,10 @@
+qt-fsarchiver (0.8.5.18~0ubuntu1hamonikr3) jin; urgency=medium
+
+  * Update translations/qt-fsarchiver_ko.ts
+   - Fixed wrong Korean Translation  
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 04 Nov 2020 09:16:50 +0900
+
 qt-fsarchiver (0.8.5.18~0ubuntu1hamonikr2) jin; urgency=medium
 
   * rebuild for HamoniKR 4.0

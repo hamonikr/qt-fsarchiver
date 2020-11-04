@@ -1222,7 +1222,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Bitte wählen Sie den Dateinamen der Sicherung aus.
 </comment>
-        <translation>백업 파일을 선택하세요.
+        <translation>백업할 파일명을 입력하세요.
 </translation>
     </message>
     <message>
