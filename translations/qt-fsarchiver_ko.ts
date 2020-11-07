@@ -1587,7 +1587,7 @@ entschlüsseln. Schlüssel</comment>
 </source>
         <comment>Die Partition wurde erfolgreich gesichert.
 </comment>
-        <translation>파티션을 백업 성공적으로.
+        <translation>파티션을 성공적으로 백업했습니다.
 </translation>
     </message>
     <message>
@@ -2867,7 +2867,7 @@ verschlüsseln. Schlüssel</comment>
 </source>
         <comment>Die Partition wurde erfolgreich gesichert.
 </comment>
-        <translation>파티션을 백업 성공적으로.
+        <translation>파티션을 성공적으로 백업했습니다.
 </translation>
     </message>
     <message>
