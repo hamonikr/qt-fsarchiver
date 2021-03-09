@@ -1,12 +1,12 @@
 eb68f114b36c4692c5cb179f4db300e6  usr/sbin/ccguess
 4f11f2736e314d4b891b97d79ce08e80  usr/sbin/de
 6eba2921bfe9fb1b73d0bf303b7e9eb1  usr/sbin/findsmb-qt
-e74e573e1bdaff60356c7003953cf0c1  usr/sbin/qt-fsarchiver
+9aabe83395c02e8f521c22e6e42dcb79  usr/sbin/qt-fsarchiver
 4dd315817baeefc60b9369005a6c4251  usr/sbin/qt-fsarchiver-terminal
 13ad1c078007f2dbe13c0b0e5d922edf  usr/sbin/qt-fsarchiver.sh
-30c51031dfd7871424f9d8ee64fda020  usr/share/app-install/icons/harddrive2.png
+753f5272c3f94ca3b4f2abf769a23900  usr/share/app-install/icons/harddrive2.png
 5deb485668b1f3790bf243b5b6025f4f  usr/share/applications/qt-fsarchiver.desktop
-2dada12a1c6a85eef9aff302c672cd81  usr/share/doc/qt-fsarchiver/changelog.gz
+c78b2b629d339303be2c3735f2cd3a34  usr/share/doc/qt-fsarchiver/changelog.gz
 09736a4dd3643892a68cac157ed8be0d  usr/share/doc/qt-fsarchiver/copyright
 9d1adaa7fdf0a0b7083952c4887dcf12  usr/share/doc/qt-fsarchiver/doc/doc/Aenderungen.gz
 b5d1d5cf8a09494f7ce72c29efb34b74  usr/share/doc/qt-fsarchiver/doc/doc/Change.gz
@@ -34,7 +34,7 @@ b49488ffbc40e66672a2cca5301c8b54  usr/share/qt5/translations/qt-fsarchiver_he.qm
 67f0d8cad7180770f2b15e2757bfa9a6  usr/share/qt5/translations/qt-fsarchiver_id.qm
 f94cbd63869bd4b0f443e00a1a32c2ef  usr/share/qt5/translations/qt-fsarchiver_it.qm
 104fe4eed1d9f05994ce2aecff63abee  usr/share/qt5/translations/qt-fsarchiver_jp.qm
-3e0a5d5a6ad6238edbef0e00546ee073  usr/share/qt5/translations/qt-fsarchiver_ko.qm
+cca96f33b2e950e07d40ec7e247acffe  usr/share/qt5/translations/qt-fsarchiver_ko.qm
 930cc57a27df036089e75e54fdac651f  usr/share/qt5/translations/qt-fsarchiver_lt.qm
 241e93d415209dbcd4ad2b777cef892d  usr/share/qt5/translations/qt-fsarchiver_lv.qm
 6ec9ebd0ba78943cc3527f2020e976fe  usr/share/qt5/translations/qt-fsarchiver_nl.qm

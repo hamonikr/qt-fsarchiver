@@ -1,6 +1,8 @@
 ## qt-fsarchiver
 
- 이 저장소의 코드는 한글로 번역을 완료하고 하모니카OS SUN 에서 테스트된 버전입니다.
+upstream : https://sourceforge.net/projects/qt-fsarchiver/
+
+이 저장소의 코드는 한글로 번역을 완료하고 하모니카OS 에서 테스트된 버전입니다.
 
  * qt-fsarchiver 는 파티션을 백업 및 복구하는 프로그램입니다.
  * dd, tar, rsysnc 같은 백업 복구 프로그램 방식이 아니라 MBR을 포함한 파티션을 백업하고 복구할 수 있습니다.
@@ -14,6 +16,10 @@
 
 ## debian binary build from repo
 ```
+# Install Build Dependancy
+$ sudo mk-build-deps --install debian/control
+
+# Create debian pkg
 dpkg-buildpackage -b -rfakeroot -us -uc
 ```
 
