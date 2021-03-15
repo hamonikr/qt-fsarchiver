@@ -7,5 +7,6 @@ Exec=/usr/sbin/qt-fsarchiver
 Icon=/usr/share/app-install/icons/harddrive2.png
 Terminal=false
 Type=Application
+Categories=System; 
 StartupNotify=true
 Keywords=fsarchiver;백업;복구;파티션;backup;restore;partition;disk

@@ -1,3 +1,10 @@
+qt-fsarchiver (0.8.5.18~0ubuntu1hamonikr5) entjin; urgency=medium
+
+  * Update debian/qt-fsarchiver/usr/share/applications/qt-fsarchiver.desktop
+   - Add Category as System
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 15 Mar 2021 17:57:51 +0900
+
 qt-fsarchiver (0.8.5.18~0ubuntu1hamonikr4) entjin; urgency=medium
 
   * Release for HamoniKR Server 2.0

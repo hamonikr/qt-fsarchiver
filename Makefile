@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = qt-fsarchiver1.0.0
-DISTDIR = /home/hamonikr/workspaces/hamonikr-fsarchiver/build/qt-fsarchiver1.0.0
+DISTDIR = /sda1/workspaces/hamonikr-fsarchiver/build/qt-fsarchiver1.0.0
 LINK          = x86_64-linux-gnu-g++
 LFLAGS        = -Wl,-O1
 LIBS          = $(SUBLIBS) -L/usr/lib -lQt5Gui -lQt5Core -lrt -llzma -lext2fs -lcom_err -le2p -lblkid -luuid -lz -llz4 -lbz2 -llzo2 -lgcrypt -lgpg-error -lzstd /usr/lib/x86_64-linux-gnu/libQt5Widgets.so /usr/lib/x86_64-linux-gnu/libQt5Gui.so /usr/lib/x86_64-linux-gnu/libQt5Core.so /usr/lib/x86_64-linux-gnu/libGL.so -lpthread   
@@ -105,6 +105,7 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/g++-unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/qconfig.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_Attica.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KArchive.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KAuth.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KAuthCore.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KBookmarks.pri \
@@ -125,6 +126,7 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KIOWidgets.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KItemViews.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KJobWidgets.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KNotifications.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KNTLM.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KService.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KTextWidgets.pri \
@@ -133,14 +135,12 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KXmlGui.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_accessibility_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_charts.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_concurrent.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_concurrent_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_core.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_core_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_dbus.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_dbus_private.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_designer.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_edid_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_egl_support_private.pri \
@@ -152,7 +152,6 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_glx_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_gui.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_gui_private.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_help.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_input_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_kms_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
@@ -174,12 +173,9 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_service_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_sql.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_sql_private.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_svg.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_testlib.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_testlib_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_theme_support_private.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uiplugin.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uitools.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_widgets.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_widgets_private.pri \
@@ -255,6 +251,7 @@ Makefile: qt-fsarchiver.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmak
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/g++-unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/qconfig.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_Attica.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KArchive.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KAuth.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KAuthCore.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KBookmarks.pri \
@@ -275,6 +272,7 @@ Makefile: qt-fsarchiver.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmak
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KIOWidgets.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KItemViews.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KJobWidgets.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KNotifications.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KNTLM.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KService.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KTextWidgets.pri \
@@ -283,14 +281,12 @@ Makefile: qt-fsarchiver.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmak
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KXmlGui.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_accessibility_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_charts.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_concurrent.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_concurrent_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_core.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_core_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_dbus.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_dbus_private.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_designer.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_edid_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_egl_support_private.pri \
@@ -302,7 +298,6 @@ Makefile: qt-fsarchiver.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmak
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_glx_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_gui.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_gui_private.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_help.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_input_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_kms_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
@@ -324,12 +319,9 @@ Makefile: qt-fsarchiver.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmak
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_service_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_sql.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_sql_private.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_svg.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_testlib.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_testlib_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_theme_support_private.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uiplugin.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uitools.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_widgets.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_widgets_private.pri \
@@ -377,6 +369,7 @@ Makefile: qt-fsarchiver.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmak
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/g++-unix.conf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/qconfig.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_Attica.pri:
+/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KArchive.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KAuth.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KAuthCore.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KBookmarks.pri:
@@ -397,6 +390,7 @@ Makefile: qt-fsarchiver.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmak
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KIOWidgets.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KItemViews.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KJobWidgets.pri:
+/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KNotifications.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KNTLM.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KService.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KTextWidgets.pri:
@@ -405,14 +399,12 @@ Makefile: qt-fsarchiver.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmak
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KXmlGui.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_accessibility_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri:
-/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_charts.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_concurrent.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_concurrent_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_core.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_core_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_dbus.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_dbus_private.pri:
-/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_designer.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_edid_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_egl_support_private.pri:
@@ -424,7 +416,6 @@ Makefile: qt-fsarchiver.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmak
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_glx_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_gui.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_gui_private.pri:
-/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_help.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_input_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_kms_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri:
@@ -446,12 +437,9 @@ Makefile: qt-fsarchiver.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmak
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_service_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_sql.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_sql_private.pri:
-/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_svg.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_testlib.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_testlib_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_theme_support_private.pri:
-/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uiplugin.pri:
-/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uitools.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_widgets.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_widgets_private.pri:
@@ -681,63 +669,63 @@ build/moc_clone.cpp: src/clone.h \
 		src/thread.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/clone.h -o build/moc_clone.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /sda1/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/clone.h -o build/moc_clone.cpp
 
 build/moc_dir.cpp: src/dir.h \
 		build/ui_dir_dialog.h \
 		src/thread.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/dir.h -o build/moc_dir.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /sda1/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/dir.h -o build/moc_dir.cpp
 
 build/moc_filedialog.cpp: src/filedialog.h \
 		build/ui_filedialog.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/filedialog.h -o build/moc_filedialog.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /sda1/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/filedialog.h -o build/moc_filedialog.cpp
 
 build/moc_mainWindow.cpp: src/mainWindow.h \
 		build/ui_fsarchiverMain.h \
 		src/thread.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/mainWindow.h -o build/moc_mainWindow.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /sda1/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/mainWindow.h -o build/moc_mainWindow.cpp
 
 build/moc_mbr.cpp: src/mbr.h \
 		build/ui_mbr_dialog.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/mbr.h -o build/moc_mbr.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /sda1/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/mbr.h -o build/moc_mbr.cpp
 
 build/moc_net.cpp: src/net.h \
 		build/ui_net.h \
 		src/thread.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/net.h -o build/moc_net.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /sda1/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/net.h -o build/moc_net.cpp
 
 build/moc_net_ein.cpp: src/net_ein.h \
 		build/ui_net_ein.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/net_ein.h -o build/moc_net_ein.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /sda1/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/net_ein.h -o build/moc_net_ein.cpp
 
 build/moc_setting.cpp: src/setting.h \
 		build/ui_setting.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/setting.h -o build/moc_setting.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /sda1/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/setting.h -o build/moc_setting.cpp
 
 build/moc_thread.cpp: src/thread.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/thread.h -o build/moc_thread.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /sda1/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/thread.h -o build/moc_thread.cpp
 
 build/moc_treeview.cpp: src/treeview.h \
 		build/ui_treeview.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver -I/home/hamonikr/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/treeview.h -o build/moc_treeview.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /sda1/workspaces/hamonikr-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver -I/sda1/workspaces/hamonikr-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/treeview.h -o build/moc_treeview.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -931,7 +919,7 @@ uninstall_target: FORCE
 
 install_icon: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/app-install/icons || mkdir -p $(INSTALL_ROOT)/usr/share/app-install/icons
-	-$(QINSTALL_PROGRAM) /home/hamonikr/workspaces/hamonikr-fsarchiver/src/images/harddrive2.png $(INSTALL_ROOT)/usr/share/app-install/icons/harddrive2.png
+	-$(QINSTALL_PROGRAM) /sda1/workspaces/hamonikr-fsarchiver/src/images/harddrive2.png $(INSTALL_ROOT)/usr/share/app-install/icons/harddrive2.png
 	-x86_64-linux-gnu-strip $(INSTALL_ROOT)/usr/share/app-install/icons/harddrive2.png
 
 uninstall_icon: FORCE
@@ -941,7 +929,7 @@ uninstall_icon: FORCE
 
 install_autostart: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/applications || mkdir -p $(INSTALL_ROOT)/usr/share/applications
-	-$(QINSTALL_PROGRAM) /home/hamonikr/workspaces/hamonikr-fsarchiver/starter/qt-fsarchiver.desktop $(INSTALL_ROOT)/usr/share/applications/qt-fsarchiver.desktop
+	-$(QINSTALL_PROGRAM) /sda1/workspaces/hamonikr-fsarchiver/starter/qt-fsarchiver.desktop $(INSTALL_ROOT)/usr/share/applications/qt-fsarchiver.desktop
 	-x86_64-linux-gnu-strip $(INSTALL_ROOT)/usr/share/applications/qt-fsarchiver.desktop
 
 uninstall_autostart: FORCE
@@ -951,42 +939,42 @@ uninstall_autostart: FORCE
 
 install_translations: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/qt5/translations || mkdir -p $(INSTALL_ROOT)/usr/share/qt5/translations
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_de.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_de.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_es.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_es.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_ru.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_ru.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_nl.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_nl.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_id.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_id.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_it.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_it.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_ch.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_ch.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_cs.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_cs.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_jp.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_jp.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_ar.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_ar.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_ca.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_ca.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_da.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_da.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_el.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_el.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_et.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_et.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_fa.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_fa.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_fi.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_fi.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_fr.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_fr.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_he.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_he.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_hi.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_hi.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_hu.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_hu.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_hy.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_hy.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_ko.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_ko.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_lv.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_lv.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_lt.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_lt.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_no.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_no.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_pl.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_pl.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_pt.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_pt.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_ro.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_ro.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_sl.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_sl.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_sr.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_sr.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_sv.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_sv.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_th.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_th.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_tr.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_tr.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_vi.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_vi.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_ur.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_ur.qm
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_uk.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_uk.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_de.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_de.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_es.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_es.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_ru.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_ru.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_nl.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_nl.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_id.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_id.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_it.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_it.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_ch.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_ch.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_cs.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_cs.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_jp.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_jp.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_ar.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_ar.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_ca.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_ca.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_da.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_da.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_el.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_el.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_et.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_et.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_fa.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_fa.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_fi.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_fi.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_fr.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_fr.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_he.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_he.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_hi.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_hi.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_hu.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_hu.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_hy.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_hy.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_ko.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_ko.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_lv.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_lv.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_lt.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_lt.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_no.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_no.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_pl.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_pl.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_pt.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_pt.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_ro.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_ro.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_sl.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_sl.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_sr.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_sr.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_sv.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_sv.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_th.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_th.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_tr.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_tr.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_vi.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_vi.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_ur.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_ur.qm
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/translations/qt-fsarchiver_uk.qm $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_uk.qm
 
 uninstall_translations: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/qt5/translations/qt-fsarchiver_uk.qm
@@ -1030,7 +1018,7 @@ uninstall_translations: FORCE
 
 install_doc: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/doc/qt-fsarchiver/doc || mkdir -p $(INSTALL_ROOT)/usr/share/doc/qt-fsarchiver/doc
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/doc $(INSTALL_ROOT)/usr/share/doc/qt-fsarchiver/doc/doc
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/doc $(INSTALL_ROOT)/usr/share/doc/qt-fsarchiver/doc/doc
 
 uninstall_doc: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/doc/qt-fsarchiver/doc/doc
@@ -1039,7 +1027,7 @@ uninstall_doc: FORCE
 
 install_smbfind: first FORCE
 	@test -d $(INSTALL_ROOT)/usr || mkdir -p $(INSTALL_ROOT)/usr
-	-$(QINSTALL) /home/hamonikr/workspaces/hamonikr-fsarchiver/src/sbin $(INSTALL_ROOT)/usr/sbin
+	-$(QINSTALL) /sda1/workspaces/hamonikr-fsarchiver/src/sbin $(INSTALL_ROOT)/usr/sbin
 
 uninstall_smbfind: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/sbin
