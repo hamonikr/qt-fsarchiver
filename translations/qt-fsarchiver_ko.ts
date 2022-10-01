@@ -628,7 +628,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Die Sicherung des Verzeichnisses war erfolgreich.
 </comment>
-        <translation>디렉터리의 백업을 성공했습니다.
+        <translation>디렉토리의 백업을 성공했습니다.
 </translation>
     </message>
     <message>
@@ -693,7 +693,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Die Wiederherstellung des Verzeichnisses war erfolgreich.
 </comment>
-        <translation>디렉터리의 백업을 성공했습니다.
+        <translation>디렉토리의 백업을 성공했습니다.
 </translation>
     </message>
     <message>
@@ -759,7 +759,7 @@ Die Dateiendung muss .fsa sein</comment>
         <source>Error in fsarchiver. The directory can not be restored!</source>
         <comment>Fehler in fsarchiver. Das Verzeichnis kann nicht wiederhergestellt werden!!
 </comment>
-        <translation>fsarchiver 프로그램 오류로 디렉터리를 복원할 수 없습니다!</translation>
+        <translation>fsarchiver 프로그램 오류로 디렉토리를 복원할 수 없습니다!</translation>
     </message>
     <message>
         <location filename="../src/dir.cpp" line="642"/>
@@ -879,7 +879,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Vorsicht: Wollen Sie wirklich die GUID Partitionstabelle zurückschreiben?
 </comment>
-        <translation>주의: 정말 하려는 경우에 GUID 파티션 테이블을 다시 작성?
+        <translation type="unfinished">주의: 정말 GUID 파티션 테이블을 다시 작성하시겠습니까?
 </translation>
     </message>
     <message>
@@ -888,7 +888,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Die GUID Partitionstabelle wurde erfolgreich wieder hergestellt.
 </comment>
-        <translation>GUID 파티션 테이블은 반환이 성공적 이면.
+        <translation type="unfinished">GUID 파티션 테이블이 복원되었습니다.
 </translation>
     </message>
     <message>
@@ -906,7 +906,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Vorsicht: Wollen Sie wirklich den MBR komplett beziehungsweise teilweise zurückschreiben?
 </comment>
-        <translation>주의: 만약 당신이 정말로 원하는 완전히 또는 부분적으로 MBR을 다시 쓰기?
+        <translation type="unfinished">주의: 정말로 MBR을 다시 쓰시겠습니까?
 </translation>
     </message>
     <message>
@@ -915,7 +915,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Der Bootloaderbereich wurde erfolgreich wieder hergestellt.
 </comment>
-        <translation>부트 로더 섹션 성공적인 복귀입니다.
+        <translation type="unfinished">부트 로더 섹션의 복원이 되었습니다.
 </translation>
     </message>
     <message>
@@ -932,7 +932,7 @@ Die Dateiendung muss .fsa sein</comment>
         <source>The partition table was successfully restored.</source>
         <comment>Die Partitionstabelle wurde erfolgreich wieder hergestellt.
 </comment>
-        <translation>파티션 테이블은 반환이 성공적 이면.</translation>
+        <translation type="unfinished">파티션 테이블이 복원되었습니다.</translation>
     </message>
     <message>
         <location filename="../src/mbr.cpp" line="277"/>
@@ -949,7 +949,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Der MBR wurde erfolgreich wieder hergestellt.
 </comment>
-        <translation>MBR 성공적인 복귀입니다.
+        <translation type="unfinished">MBR 이 복원되었습니다.
 </translation>
     </message>
     <message>
@@ -958,7 +958,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Der MBR wurde nicht wieder hergestellt.
 </comment>
-        <translation>MBR 복원 되지 않습니다.
+        <translation type="unfinished">MBR 이 복원 되지 않습니다.
 </translation>
     </message>
     <message>
@@ -967,7 +967,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Vorsicht: Wollen Sie wirklich den verborgenen Bereich zurückschreiben? 
 </comment>
-        <translation>주의: 당신이 정말 작성 하려는 경우에 다시 비밀 필드?
+        <translation type="unfinished">주의: 정말 숨김 영역을 복원 하시겠습니까?
 </translation>
     </message>
     <message>
@@ -976,7 +976,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Der verborgene Bereich wurde erfolgreich wieder hergestellt.
 </comment>
-        <translation>숨겨진된 지역 성공적인 복귀입니다.
+        <translation type="unfinished">숨김 영역이 복원 되었습니다.
 </translation>
     </message>
     <message>
@@ -985,7 +985,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Der verborgene Bereich wurde nicht wieder hergestellt.
 </comment>
-        <translation>숨겨진된 영역은 복원 되지 않습니다.
+        <translation type="unfinished">숨김 영역은 복원 되지 않습니다.
 </translation>
     </message>
     <message>
@@ -993,21 +993,21 @@ Die Dateiendung muss .fsa sein</comment>
         <source>Error. The partition table cannot be read. The partition table cannot be read out. The program is aborted.</source>
         <comment>Fehler. Die Partitionstabelle kann nicht ausgelesen werden. Das Programm wird abgebrochen.
 </comment>
-        <translation></translation>
+        <translation type="unfinished">파티션 테이블을 읽을 수 없습니다. 프로그램이 종료됩니다.</translation>
     </message>
     <message>
         <location filename="../src/mbr.cpp" line="374"/>
         <source>The end of hidden area of the 1st Partition could not be read. Only 512 bytes are saved.</source>
         <comment>Das Ende des verborgenen Bereiches der 1. Partition konnte nicht ausgelesen werden. Es werden nur 512 Bytes gesichert.
 </comment>
-        <translation>1 분할의 숨겨진 영역의 끝을 읽을 수 없습니다. 512 바이트만 백업 됩니다.</translation>
+        <translation type="unfinished">첫번째 파티션의 숨김영역 마지막을 읽을 수 없습니다. 512 바이트만 백업 됩니다.</translation>
     </message>
     <message>
         <location filename="../src/mbr.cpp" line="470"/>
         <source>You must select a directory</source>
         <comment>Sie müssen ein Verzeichnis auswählen
 </comment>
-        <translation>디렉터리를 선택 해야 합니다.</translation>
+        <translation type="unfinished">디렉토리를 선택 해야 합니다.</translation>
     </message>
     <message>
         <location filename="../src/mbr.cpp" line="476"/>
@@ -1015,7 +1015,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Sie haben eine Datei ausgewählt. Sie müssen ein Verzeichnis auswählen
 </comment>
-        <translation>파일을 선택 했습니다. 디렉터리를 선택 해야 합니다.
+        <translation>파일을 선택 했습니다. 디렉토리를 선택 해야 합니다.
 </translation>
     </message>
     <message>
@@ -1033,14 +1033,14 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Sie haben ein Verzeichnis ausgewählt. Sie müssen eine MBR/GPT Sicherungsdatei auswählen
 </comment>
-        <translation>디렉터리를 선택 했습니다. MBR 또는 GPT 백업 파일을 선택 해야 합니다.
+        <translation>디렉토리를 선택 했습니다. MBR 또는 GPT 백업 파일을 선택 해야 합니다.
 </translation>
     </message>
     <message>
         <location filename="../src/mbr.cpp" line="506"/>
         <source> bytes. Do you want to continue?</source>
         <comment> Byte. Wollen Sie fortfahren?</comment>
-        <translation></translation>
+        <translation type="unfinished"> bytes. 계속하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../src/mbr.cpp" line="497"/>
@@ -1070,7 +1070,7 @@ Die Dateiendung muss .fsa sein</comment>
         <location filename="../src/mbr.cpp" line="506"/>
         <source> bytes. The hidden area of the disk </source>
         <comment> Byte. Der verborgene Bereich von der Festplatte </comment>
-        <translation>바이트입니다. 디스크의 숨겨진된 영역은 </translation>
+        <translation type="unfinished"> bytes. 디스크의 숨겨진된 영역은 </translation>
     </message>
     <message>
         <location filename="../src/mbr.cpp" line="506"/>
@@ -1088,7 +1088,7 @@ Die Dateiendung muss .fsa sein</comment>
         <location filename="../src/mbr.cpp" line="522"/>
         <source>No</source>
         <comment>Nein</comment>
-        <translation>없음</translation>
+        <translation type="unfinished">아니오</translation>
     </message>
 </context>
 <context>
@@ -1231,7 +1231,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Sie haben eine Datei ausgewählt. Sie müssen ein Verzeichnis auswählen
 </comment>
-        <translation>파일을 선택 했습니다. 디렉터리를 선택 해야 합니다.
+        <translation>파일을 선택 했습니다. 디렉토리를 선택 해야 합니다.
 </translation>
     </message>
     <message>
@@ -1294,7 +1294,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Für das NFS Protokoll wurde kein freigegebenes Verzeichnis gefunden.
 </comment>
-        <translation>NFS 공유 디렉터리를 찾을 수 없습니다.
+        <translation>NFS 공유 디렉토리를 찾을 수 없습니다.
 </translation>
     </message>
     <message>
@@ -1303,7 +1303,7 @@ Die Dateiendung muss .fsa sein</comment>
 </source>
         <comment>Für das Samba Protokoll wurde kein freigegebenes Verzeichnis gefunden.
 </comment>
-        <translation>삼바 공유 디렉터리를 찾을 수 없습니다.
+        <translation>삼바 공유 디렉토리를 찾을 수 없습니다.
 </translation>
     </message>
     <message>
@@ -1690,7 +1690,7 @@ entschlüsseln. Schlüssel</comment>
 </source>
         <comment>Sie haben versucht eine Partition wiederherzustellen. Die gewählte Datei kann nur Verzeichnisse wiederherstellen. Bitte starten Sie das Programm neu.
 </comment>
-        <translation>파티션을 복원 하려고 했습니다. 선택한 파일 디렉터리 복원할 수 있습니다. 프로그램을 다시 시작 하십시오.
+        <translation>파티션을 복원 하려고 했습니다. 선택한 파일 디렉토리 복원할 수 있습니다. 프로그램을 다시 시작 하십시오.
 </translation>
     </message>
     <message>
@@ -2105,7 +2105,7 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/ui/net.ui" line="74"/>
         <source>Existing partitions/directories:</source>
         <extracomment>vorhandene Partitionen:</extracomment>
-        <translation>백업된 파일 또는 디렉터리:</translation>
+        <translation>백업된 파일 또는 디렉토리:</translation>
     </message>
     <message>
         <location filename="../src/ui/net.ui" line="93"/>
@@ -2173,13 +2173,13 @@ with fs-archiver</source>
         <location filename="../src/ui/net.ui" line="257"/>
         <source>On the number saved
 Files/directories:</source>
-        <translation>백업된 파일/디렉터리 수:</translation>
+        <translation>백업된 파일/디렉토리 수:</translation>
     </message>
     <message>
         <location filename="../src/ui/net.ui" line="272"/>
         <source>already saved 
 files/directories:</source>
-        <translation>이미 백업된 파일/디렉터리:</translation>
+        <translation>이미 백업된 파일/디렉토리:</translation>
     </message>
     <message>
         <location filename="../src/ui/net.ui" line="294"/>
@@ -2201,7 +2201,7 @@ files/directories:</source>
     <message>
         <location filename="../src/ui/net.ui" line="369"/>
         <source>Directory in which the partition is backed up or from which the recovery file is selected.</source>
-        <translation>디렉터리는 파티션을 백업 또는 복원 파일에서 제거 됩니다.</translation>
+        <translation>디렉토리는 파티션을 백업 또는 복원 파일에서 제거 됩니다.</translation>
     </message>
     <message>
         <location filename="../src/ui/net.ui" line="372"/>
@@ -2479,7 +2479,7 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/mainWindow.cpp" line="569"/>
         <source>Backup directory</source>
         <comment>Sicherungsverzeichnis</comment>
-        <translation>백업 디렉터리</translation>
+        <translation>백업 디렉토리</translation>
     </message>
     <message>
         <location filename="../src/mainWindow.cpp" line="583"/>
@@ -2604,7 +2604,7 @@ verschlüsseln. Schlüssel</comment>
 </source>
         <comment>Bitte wählen Sie das Sicherungsverzeichnis aus.
 </comment>
-        <translation>백업 디렉터리를 선택하세요.
+        <translation>백업 디렉토리를 선택하세요.
 </translation>
     </message>
     <message>
@@ -2630,7 +2630,7 @@ verschlüsseln. Schlüssel</comment>
 </source>
         <comment>Sie haben eine Datei ausgewählt. Sie müssen ein Verzeichnis auswählen
 </comment>
-        <translation>파일을 선택 했습니다. 디렉터리를 선택 해야 합니다.
+        <translation>파일을 선택 했습니다. 디렉토리를 선택 해야 합니다.
 </translation>
     </message>
     <message>
@@ -2722,7 +2722,7 @@ verschlüsseln. Schlüssel</comment>
 </source>
         <comment>Sie haben ein Verzeichnis ausgewählt. Sie müssen eine Datei auswählen
 </comment>
-        <translation>디렉터리를 선택 했습니다. 파일을 선택 해야 합니다.
+        <translation>디렉토리를 선택 했습니다. 파일을 선택 해야 합니다.
 </translation>
     </message>
     <message>
@@ -3082,7 +3082,7 @@ HamoniKR fsarchiver 1.0.0, 10 Oct 2020</translation>
 </source>
         <comment>Sie haben versucht eine Partition wiederherzustellen. Die gewählte Datei kann nur Verzeichnisse wiederherstellen. Bitte starten Sie das Programm neu.
 </comment>
-        <translation>파티션을 복원 시도 했습니다. 선택한 파일 디렉터리를 복원할 수 있습니다. 프로그램을 다시 시작 하십시오.
+        <translation>파티션을 복원 시도 했습니다. 선택한 파일 디렉토리를 복원할 수 있습니다. 프로그램을 다시 시작 하십시오.
 </translation>
     </message>
     <message>
@@ -3158,7 +3158,7 @@ HamoniKR fsarchiver 1.0.0, 10 Oct 2020</translation>
         <location filename="../src/mainWindow.cpp" line="1883"/>
         <source>to be protected/secured partition: / (root system directory) </source>
         <comment>zu sichernde / gesicherte Partition: / (Wurzel-Systemverzeichnis) </comment>
-        <translation>보호할 파티션 : / (루트 시스템 디렉터리) </translation>
+        <translation>보호할 파티션 : / (루트 시스템 디렉토리) </translation>
     </message>
     <message>
         <location filename="../src/mainWindow.cpp" line="1889"/>
@@ -3216,7 +3216,7 @@ HamoniKR fsarchiver 1.0.0, 10 Oct 2020</translation>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="52"/>
         <source>Backup directory:</source>
-        <translation>백업 디렉터리</translation>
+        <translation>백업 디렉토리</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="65"/>
@@ -3267,13 +3267,13 @@ HamoniKR fsarchiver 1.0.0, 10 Oct 2020</translation>
         <location filename="../src/ui/fsarchiverMain.ui" line="227"/>
         <source>On the number saved
 Files/directories:</source>
-        <translation>백업된 파일 또는 디렉터리 수 :</translation>
+        <translation>백업된 파일 또는 디렉토리 수 :</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="235"/>
         <source>already saved 
 files/directories:</source>
-        <translation>백업된 파일 또는 디렉터리:</translation>
+        <translation>백업된 파일 또는 디렉토리:</translation>
     </message>
     <message>
         <location filename="../src/ui/fsarchiverMain.ui" line="537"/>
@@ -3958,32 +3958,32 @@ compression:</source>
         <location filename="../src/ui/setting.ui" line="113"/>
         <source>Overwrite existing files by default</source>
         <extracomment>vorhandene Dateien * standardmäßig überschreiben</extracomment>
-        <translation>기본적으로 기존 파일 무시</translation>
+        <translation type="unfinished">기존 파일 덮어쓰기</translation>
     </message>
     <message>
         <location filename="../src/ui/setting.ui" line="126"/>
         <source>Activate notes for backup  by default</source>
         <extracomment>Hinweise zur Sicherung * standardmäßig aktivieren</extracomment>
-        <translation>기본적으로 백업 참고 사용</translation>
+        <translation type="unfinished">백업 메모파일 사용</translation>
     </message>
     <message>
         <location filename="../src/ui/setting.ui" line="139"/>
         <source>Directories write back
 to the original location by default</source>
         <extracomment>Verzeichnisse * standardmäßig an * den ursprünglichen * Ort zurückschreiben</extracomment>
-        <translation>기본적으로 원본 디렉토리에 복원하기</translation>
+        <translation type="unfinished">원본 디렉토리에 복원하기</translation>
     </message>
     <message>
         <location filename="../src/ui/setting.ui" line="153"/>
         <source>Enable encryption by default</source>
         <extracomment>Verschlüsselung * standardmäßig aktivieren</extracomment>
-        <translation>기본적으로 암호화를 사용 하도록 설정</translation>
+        <translation type="unfinished">암호화를 사용 하도록 설정</translation>
     </message>
     <message>
         <location filename="../src/ui/setting.ui" line="166"/>
         <source>Archive file size divided on DVD</source>
         <extracomment>Archiv-Datei auf DVD * Größe aufteilen</extracomment>
-        <translation>DVD에 나누어 보관 파일 크기</translation>
+        <translation type="unfinished">DVD에 나누어 보관할 파일 크기</translation>
     </message>
     <message>
         <location filename="../src/ui/setting.ui" line="179"/>
@@ -4000,7 +4000,7 @@ to the original location by default</source>
         <location filename="../src/ui/setting.ui" line="205"/>
         <source>Save Settings</source>
         <extracomment>Einstellungen speichern</extracomment>
-        <translation>설정 백업</translation>
+        <translation type="unfinished">환경설정 저장</translation>
     </message>
     <message>
         <location filename="../src/ui/setting.ui" line="218"/>

@@ -1,3 +1,11 @@
+qt-fsarchiver (0.8.5.18-1hamonikr) jammy; urgency=medium
+
+  * Release for Ubuntu 22.04
+   - Removed first app run dialog
+   - Update Korean translation.
+
+ -- HamoniKR <pkg@hamonikr.org>  Sat, 01 Oct 2022 14:07:34 +0900
+ 
 qt-fsarchiver (0.8.5.18~0ubuntu1hamonikr5) entjin; urgency=medium
 
   * Update debian/qt-fsarchiver/usr/share/applications/qt-fsarchiver.desktop

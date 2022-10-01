@@ -37,5 +37,7 @@ Depends: ${shlibs:Depends},
                 jfsutils                
 Description: Program to back up and restore partitions,
  directories and the MBR/GPT. Clone hard drives and build images of hard drives.
+
+ 파티션(MBT/GPT 형식 지원) 이나 디렉토리의 백업 및 복구를 할 수 있는 프로그램. 
  
 
