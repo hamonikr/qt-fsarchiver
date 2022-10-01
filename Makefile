@@ -158,7 +158,6 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf \
@@ -274,7 +273,6 @@ Makefile: qt-fsarchiver.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmak
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf \
@@ -362,7 +360,6 @@ Makefile: qt-fsarchiver.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmak
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf:
-.qmake.stash:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf:
@@ -579,63 +576,63 @@ build/moc_clone.cpp: src/clone.h \
 		src/thread.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/clone.h -o build/moc_clone.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/clone.h -o build/moc_clone.cpp
 
 build/moc_dir.cpp: src/dir.h \
 		build/ui_dir_dialog.h \
 		src/thread.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/dir.h -o build/moc_dir.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/dir.h -o build/moc_dir.cpp
 
 build/moc_filedialog.cpp: src/filedialog.h \
 		build/ui_filedialog.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/filedialog.h -o build/moc_filedialog.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/filedialog.h -o build/moc_filedialog.cpp
 
 build/moc_mainWindow.cpp: src/mainWindow.h \
 		build/ui_fsarchiverMain.h \
 		src/thread.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/mainWindow.h -o build/moc_mainWindow.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/mainWindow.h -o build/moc_mainWindow.cpp
 
 build/moc_mbr.cpp: src/mbr.h \
 		build/ui_mbr_dialog.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/mbr.h -o build/moc_mbr.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/mbr.h -o build/moc_mbr.cpp
 
 build/moc_net.cpp: src/net.h \
 		build/ui_net.h \
 		src/thread.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/net.h -o build/moc_net.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/net.h -o build/moc_net.cpp
 
 build/moc_net_ein.cpp: src/net_ein.h \
 		build/ui_net_ein.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/net_ein.h -o build/moc_net_ein.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/net_ein.h -o build/moc_net_ein.cpp
 
 build/moc_setting.cpp: src/setting.h \
 		build/ui_setting.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/setting.h -o build/moc_setting.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/setting.h -o build/moc_setting.cpp
 
 build/moc_thread.cpp: src/thread.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/thread.h -o build/moc_thread.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/thread.h -o build/moc_thread.cpp
 
 build/moc_treeview.cpp: src/treeview.h \
 		build/ui_treeview.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/treeview.h -o build/moc_treeview.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/hamonikr/workspaces/tmp/qt-fsarchiver/build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver -I/home/hamonikr/workspaces/tmp/qt-fsarchiver/src -I/usr/include/ext2fs -I/usr/include/et -I/usr/include/e2p -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include src/treeview.h -o build/moc_treeview.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
