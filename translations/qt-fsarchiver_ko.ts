@@ -1722,7 +1722,7 @@ entschlüsseln. Schlüssel</comment>
         <location filename="../src/net.cpp" line="2052"/>
         <source>No</source>
         <comment>Nein</comment>
-        <translation>없음</translation>
+        <translation>아니오</translation>
     </message>
     <message>
         <location filename="../src/net.cpp" line="1655"/>
@@ -2858,7 +2858,7 @@ verschlüsseln. Schlüssel</comment>
         <location filename="../src/mainWindow.cpp" line="1388"/>
         <source>No</source>
         <comment>Nein</comment>
-        <translation>없음</translation>
+        <translation>아니오</translation>
     </message>
     <message>
         <location filename="../src/mainWindow.cpp" line="1537"/>
