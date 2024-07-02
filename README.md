@@ -2,10 +2,12 @@
 ![ubuntu-focal](https://img.shields.io/badge/ubuntu-20.04-red)
 ![ubuntu-hirsute](https://img.shields.io/badge/ubuntu-21.04-red)
 ![ubuntu-jammy](https://img.shields.io/badge/ubuntu-22.04-red)
+![ubuntu-noble](https://img.shields.io/badge/ubuntu-24.04-red)
 ![hamonikr-me](https://img.shields.io/badge/hamonikr-me-orange)
 ![hamonikr-sun](https://img.shields.io/badge/hamonikr-sun-blue)
 ![hamonikr-jin](https://img.shields.io/badge/hamonikr-jin-green)
 ![hamonikr-hanla](https://img.shields.io/badge/hamonikr-hanla-purple)
+![hamonikr-kumkang](https://img.shields.io/badge/hamonikr-kumkang-blue)
 
 ## qt-fsarchiver
 
@@ -27,23 +29,16 @@
  * 50% 정도의 데이터 압축률로 보관.
  * 다양한 포멧의 백업방식 지원
 
-## 설치하기
+## Install
 
-### ubuntu (>=22.04) , HamoniKR (>=6.0)
-```
-wget -qO- https://repo.hamonikr.org/hamonikr-app.apt | sudo -E bash -
-
-sudo apt install qt-fsarchiver
-```
-
-### ubuntu (<=20.04) , HamoniKR (<=5.0)
+### Ubuntu, Debian, Linuxmint
 ```
 curl -sL https://pkg.hamonikr.org/add-hamonikr.apt | sudo -E bash -
 
 sudo apt install qt-fsarchiver
 ```
 
-## BUILD
+## Build Instruction
 ### debian binary build from repo
 ```
 # Install Build Dependancy
@@ -51,11 +46,4 @@ $ sudo mk-build-deps --install debian/control
 
 # Create debian pkg
 dpkg-buildpackage -b -rfakeroot -us -uc
-```
-
-### build with gpg sign from source (Ubuntu >=22.04)
-```
-sudo mk-build-deps --install debian/control
-
-./release.sh
 ```

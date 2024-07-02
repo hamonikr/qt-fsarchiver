@@ -2596,7 +2596,7 @@ verschlüsseln. Schlüssel</comment>
         <location filename="../src/mainWindow.cpp" line="477"/>
         <source>The file /usr/share/doc/qt-fsarchiver/doc/Readme contains instructions for using the program. Do you still want to see this note? You can change this in the basic settings.</source>
         <comment>In der Datei /usr/share/doc/qt-fsarchiver/doc/Liesmich sind Hinweise zur Nutzung des Programms enthalten. Wollen Sie diesen Hinweis weiterhin sehen? Sie können dies in den Basiseinstellungen ändern.</comment>
-        <translation>파일 /usr/share/doc/qt-fsarchiver/Readme에는 프로그램의 사용에 포함 된 지침. 이 표시 될 계속 할까요? 기본 설정에서 변경할 수 있습니다.</translation>
+        <translation>파일 /usr/share/doc/qt-fsarchiver/Readme 에 프로그램 사용법이 있습니다. 프로그램 시작 시 이 알림을 계속 할까요? 기본 설정에서 변경할 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../src/mainWindow.cpp" line="622"/>

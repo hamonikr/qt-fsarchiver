@@ -1,3 +1,9 @@
+qt-fsarchiver (1.0.0+hamonikr) noble; urgency=medium
+
+  * Release for Ubuntu 24.04
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 03 Jul 2024 00:30:50 +0900
+
 qt-fsarchiver (0.8.5.18-2hamonikr) jammy; urgency=medium
 
   * Release for Ubuntu 22.04
