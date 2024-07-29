@@ -1,3 +1,10 @@
+qt-fsarchiver (1) paektu; urgency=medium
+
+  [Kevin Kim]
+  * Release for HamoniKR paektu
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 29 Jul 2024 15:18:59 +0900
+
 qt-fsarchiver (1.0.0+hamonikr) noble; urgency=medium
 
   * Release for Ubuntu 24.04
@@ -51,7 +58,3 @@ qt-fsarchiver (0.8.5.18~0ubuntu1hamonikr1) bionic; urgency=medium
   * Changed Korean Translation  
 
  -- Kevin Kim <root@hamonikr.org>  Wed, 30 Sep 2020 10:55:17 +0900
-
-
-
-
